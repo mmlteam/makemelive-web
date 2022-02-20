@@ -1,0 +1,163 @@
+@import '../../styles/mixins';
+
+.contact-page-wrapper{
+    margin-top: 9em;
+   // margin-bottom: 7em;
+    @include respond-until(sm) {
+        margin-top: 8em;
+    }
+    .contact-fold1{
+        .contact-details-wrap {
+            padding: 0 20px;
+
+            .contact-details-title {
+                margin-bottom: 30px;
+                @include respond-until(sm){
+                    text-align: center;
+                }
+                h2{
+                    font-size: 55px;
+                    font-weight: 800;
+                    line-height: 66px;
+                    @include respond-until(sm) {
+                        font-size: 30px;
+                        line-height: 30px;
+                    }
+                    span.font-weightlight {
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .contact-details-desc{
+                margin-bottom: 40px;
+                @include respond-until(sm) {
+                    text-align: center;
+                }
+                p {
+                    font-size: 18px;
+                    line-height: 30px;
+                    color: #454545;
+                    padding-right: 10em;
+                    @include respond-until(sm) {
+                        padding-right: 0;
+                        font-size: 16px;
+                        line-height: 170%;
+                    }
+                }
+            }
+
+            .contact-details-data{
+                .address-data-wrap {
+					display: flex;
+					align-items: center;
+                    @include respond-until(sm) {
+                        margin-bottom: 1em;
+                    }
+					.address-icon {
+						display: flex;
+						margin-right: 0.5em;
+                        color: #393c3e;
+					}
+					.address-details {
+						p {
+                            margin-bottom: 0;
+							a {
+								font-size: 14px;
+								color: #393c3e;
+								font-weight: 400;
+								line-height: 25px;
+								&:hover {
+									color: #0267c1;
+									transition: 0.5s;
+								}
+
+                                @include respond-until(sm) {
+                                    br{
+                                        display: none;
+                                    }
+                                }
+							}
+						}
+					}
+				}
+				.email-data-wrap {
+					display: flex;
+					align-items: center;
+                    @include respond-until(sm) {
+                        margin-bottom: 1em;
+                    }
+					.email-icon {
+						display: flex;
+						margin-right: 0.5em;
+                        color: #393c3e;
+					}
+					.email-data {
+						a {
+							color: #393c3e;
+							font-size: 14px;
+                            &:hover {
+                                color: #0267c1;
+                                transition: 0.5s;
+                            }
+						}
+					}
+				}
+				.call-data-wrap {
+					display: flex;
+					align-items: center;
+					.call-icon {
+						display: flex;
+						margin-right: 0.5em;
+                        color: #393c3e;
+					}
+					.call-data {
+						a {
+							color: #393c3e;
+							font-size: 14px;
+						}
+					}
+				}
+
+                .contact-social-icon{
+                    margin-top: 30px;
+
+                    .social-title {
+                        h3{
+                            font-weight: 500;
+                            font-size: 20px;
+                            font-style: normal;
+                            line-height: 30px;
+                        }
+                    }
+
+                    ul.contact-social-icon-wrap {
+                        display: flex;
+
+                        li.contact-social-list-item{
+                            padding: 20px 40px 0 0;
+                            @include respond-until(sm) {
+                                padding: 20px 30px 0 0;
+                            }
+
+                            a{
+                                color: #393c3e;
+                                font-size: 20px;
+                                @include respond-until(sm) {
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .contact-fold2 {
+        margin: 5em 0 -1em;
+    }
+    .gmap_iframe {
+        min-height: 480px;
+       
+    }
+}

@@ -1,0 +1,109 @@
+@import '../../styles/mixins';
+.work-page-wrapper{
+    margin-top: 6em;
+
+    .work-fold1{
+        position: relative;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: 8em;
+        padding-bottom: 2em;
+        min-height: 50vh;
+        @include respond-until(sm) {
+            min-height: 30vh;
+            background-size: cover;
+        }
+
+        .work-banner-content-wrap{
+            padding-top: 4em;
+            text-align: center;
+            @include respond-until(sm) {
+                padding-top: 3em;
+            }
+
+            .work-banner-title{
+                h1{
+                    font-size: 106px;
+                    color: #000;
+                    letter-spacing: -0.04em;
+                    line-height: 100%;
+                    font-weight: 700;
+                    @include respond-until(sm) {
+                        font-size: 52px;
+                    }
+                }
+            }
+            
+            .work-banner-subtitle{
+                margin-top: 55px;
+                @include respond-until(sm) {
+                    margin-top: 40px;
+                }
+                h2{
+                    font-family: 'loraregular';
+                    font-size: 34px;
+                    color: #000000cc;
+                    letter-spacing: -0.02em;
+                    line-height: 150%;
+                    font-weight: 400;
+                    font-style: normal;
+
+                    @include respond-until(sm) {
+                        font-size: 30px;
+                        padding: 0 1em;
+                    }
+                }
+            }
+        }
+    }
+
+    .work-fold2{
+        margin-top: 5em;
+        margin-bottom: 10em;
+        @include respond-until(sm) {
+            margin-top: 2em;
+            margin-bottom: 2em;
+        }
+    }
+
+    .work-fold3{
+        min-height: 30vh;
+    }
+}
+
+
+$main-color: rgb(17, 73, 255);
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.filter-box
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: red;
+
+  padding: 8px;
+
+  .filter-box-item
+  {
+    background: yellow;
+    margin: 4px;
+    padding: 4px;
+    border-bottom: solid 3px transparent;
+
+    &:hover
+    {
+      border-bottom-color: $main-color;
+    }
+  }
+}
+
+.gallery-item
+{
+  background: greenyellow;
+  padding: 8px;
+}

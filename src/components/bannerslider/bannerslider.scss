@@ -1,0 +1,86 @@
+@import '../../styles/mixins';
+
+.home-banner-slide-wrapper{
+    text-align: center;
+    height: 12.5em;
+    @include respond-until(sm) {
+        height: 5em;
+    }
+}
+
+.home-banner-bg img {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    @include respond-until(sm) {
+        width: 100%;
+        height: 280px;
+        left: 0em;
+    }
+}
+
+.slide-upper-title{
+    margin-top: 2em;
+    margin-bottom: 40px;
+    h4 {
+        font-size: 17px;
+        line-height: 28px;
+        color: rgba(0, 0, 0, 1);
+        font-style: normal;
+        text-transform: none;
+        letter-spacing: 0.02em;
+        font-weight: 500;
+    }
+}
+
+.home-banner-head-title{
+    text-align: center;
+    position: relative;
+}
+
+.animation-slide-head .home-slide-wrap{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    /* opacity: 0; */
+}
+
+.animation-slide-head .home-slide-wrap .slide-content-item h1{
+    display: inline-block; 
+    opacity: 0;
+    line-height: 1.10;
+    font-size: 9em;
+    font-weight: 700;
+    letter-spacing: -.01783333em;
+    @include respond-until(sm) {
+        font-size: 5.8vh;
+    }
+}
+
+// .slide-bottom-title{
+//     margin-top: 17em;
+// }
+
+.head-slide-1 .slide-content-item h1{
+    opacity: 1;
+}
+
+.slide-bottom-title h3 {
+    font-size: 30px;
+    font-family: 'loraregular';
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+/* media query start */
+// @media screen and (max-width: 767px) {
+//     .animation-slide-head .home-slide-wrap .slide-content-item h1{
+//         font-size: 5.8vh;
+//     }
+// }
+/* media query end */

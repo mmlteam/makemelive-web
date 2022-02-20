@@ -1,0 +1,61 @@
+@import '../../styles/mixins';
+
+.about-page-wrapper {
+    margin-top: 10em;
+    .about-page-header {
+        padding: 2em 2em;
+        margin-bottom: 5em;
+        @include respond-until(sm) {
+            padding: 0;
+            margin-bottom: 3em;
+            text-align: center;
+        }
+    }
+    h2{
+        font-size: 60px;
+        line-height: 90px;
+        font-weight: 900;
+        letter-spacing: -0.03em;
+        margin-bottom: 40px;
+        @include respond-until(sm) {
+            font-size: 30px;
+            line-height: 40px;
+            text-align: center;
+        }
+    }
+
+    .our-star-team{
+        @include respond-until(sm) {
+            margin-top: 3em;
+        }
+    }
+    .about-content-item{
+        font-size: 14px;
+        @include respond-until(sm) {
+            text-align: center;
+        }
+    }
+    .team-wrapper {
+        margin-top: 5em;
+        margin-bottom: 5em;
+        @include respond-until(sm) {
+            margin-top: 3em;
+        }
+
+        .profile-box{
+            margin-bottom: 3em;
+            .profile-pose {
+                margin-top: 0.7em;
+                h3 {
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+                span {
+                    color: #00000080;
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+    
+}

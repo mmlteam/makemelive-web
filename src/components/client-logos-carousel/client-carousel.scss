@@ -1,0 +1,67 @@
+@import '../../styles/slick';
+@import '../../styles/mixins';
+
+.client-logo-carousel-wrap{
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    margin: 0 50px;
+    @include respond-until(sm) {
+        margin: 0 20px;
+    }
+}
+
+.client-logo-carousel-wrap .slick-prev{
+    left: 0;
+}
+
+.client-logo-carousel-wrap .slick-next{
+    right: 0;
+}
+
+/* .client-logo-carousel-wrap .slick-prev, .slick-next{
+    border: 1px solid #000;
+    top: 60px;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+} */
+
+.client-logo-carousel-wrap .slick-prev{
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: transparent;
+    transform: unset;
+    border: unset;
+    padding: 8px;
+    fill: #00000080;
+    transform: translateY(-50%);
+    border: 1px solid #dddddd;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.client-logo-carousel-wrap .slick-next{
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: transparent;
+    transform: unset;
+    border: unset;
+    padding: 8px;
+    fill: #00000080;
+    transform: translateY(-50%);
+    border: 1px solid #dddddd;
+    border-radius: 50%;
+}
+
+.client-carousel-slide-item {
+    padding: 20px 50px;
+    @include respond-until(sm) {
+        padding: 10px 50px;
+    }
+}

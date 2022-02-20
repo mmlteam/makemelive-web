@@ -1,0 +1,192 @@
+@import '../../styles/mixins';
+.upgrade-page-wrapper{
+    margin-top: 0em;
+    .upgrade-fold1{
+        margin-top: -2em;
+        min-height: 100vh;
+        @include respond-until(sm) {
+            margin-top: 5em;
+            min-height: 50vh;
+        }
+        .upgrade-banner-left-wrap{
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: left center;
+            background-position-x: 35px;
+            display: flex;
+            height: 500px;
+            margin-top: 11em;
+            align-items: center;
+            justify-content: center;
+            @include respond-until(sm) {
+                background-position: center;
+                margin-top: 0;
+                background-size: cover;
+                height: 300px;
+            }
+    
+            .upgrade-banner-content-wrap {
+                padding: 0em 3.2em 0 5em;
+                @include respond-until(sm){
+                    padding: 0em 1em 0 1em;
+                    text-align: center;
+                }
+    
+                .upgrade-banner-title{
+                    margin-bottom: 30px;
+                    margin-top: -35px;
+                    @include respond-until(sm) {
+                        margin-bottom: 10px;
+                    }
+                    h2{
+                        font-size: 50px;
+                        text-transform: uppercase;
+                        line-height: 60px;
+                        font-weight: 800;
+                        letter-spacing: -0.03em;
+                        color: #000;
+                        @include respond-until(sm) {
+                            font-size: 30px;
+                        }
+                    }
+                }
+    
+                .upgrade-banner-desc{
+                    p{
+                        color: #454545;
+                        line-height: 30px;
+                        font-size: 18px;
+                        font-weight: 500;
+                        @include respond-until(sm) {
+                            font-size: 16px;
+                        }
+                    }   
+                }
+            }
+        }
+        .upgrade-banner-right-wrap{
+            .upgrade-banner-img-wrap {
+                position: relative;
+                height: 478px;
+                align-items: stretch;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                -webkit-box-align: stretch;
+                width: calc(80% + 185px);
+                top: 100px;
+                left: 20px;
+                margin-bottom: 40px;
+                @include respond-until(sm) {
+                    height: unset;
+                    width: unset;
+                    top: 25px;
+                    left: 0;
+                    margin-bottom: 0;
+                }
+    
+                .upgrade-banner-right-img {
+                    flex: 1 1;
+                    overflow: hidden;
+                    transform: skewX(-20deg);
+                    @include respond-until(sm) {
+                        transform: unset;
+                    }
+    
+                    img.upgrade-banner-image{
+                        display: block;
+                        position: absolute;
+                        width: calc(100% + 174px);
+                        left: -87px;
+                        height: 100%;
+                        min-height: auto;
+                        object-fit: cover;
+                        -webkit-user-select: none;
+                        user-select: none;
+                        pointer-events: none;
+                        transform: skewX(20deg);
+                        max-width: inherit;
+                        @include respond-until(sm) {
+                            position: unset;
+                            width: unset;
+                            left: 0;
+                            height: unset;
+                            transform: unset;
+                            max-width: -webkit-fill-available;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .upgrade-fold2{
+        padding-top: 2em;
+        padding-bottom: 5em;
+        @include respond-until(sm) {
+            padding-top: 7em;
+        }
+
+        .upgrade-btm-section-column{
+            padding: 0 20px 80px 20px;
+            @include respond-until(sm) {
+                padding: 0 0px 50px 0px;
+                text-align: center;
+            }
+
+        .upgrade-btm-column-img{
+            img{
+                max-width: 65px;
+                width: 100%;
+            }
+        }
+        
+        .upgrade-btm-column-content-wrap {
+            margin-top: 40px;
+
+            .upgrade-btm-col-title{
+                h3{
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 30px;
+                    color: #000;
+                }
+            }
+            
+            .upgrade-btm-col-desc {
+                margin-top: 5px;
+
+                p{
+                    font-size: 14px;
+                    line-height: 28px;
+                    color: #454545;
+                    margin-bottom: 20px;
+                }
+
+                a.our-services-learn-more{
+                    font-size: 12px;
+                    text-decoration: none;
+                    color: #000000cc;
+
+                    span.angle-right{
+                        display: inline-flex;
+                        vertical-align: middle;
+                        background-color: #3772ff;
+                        font-size: 12px;
+                        border-radius: 50%;
+                        padding-left: 0px;
+                        color: #fff;
+                        margin-left: 8px;
+                        @include respond-until(sm) {
+                            font-size: 10px;
+                            margin-top: -2px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    }
+}

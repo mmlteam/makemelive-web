@@ -1,0 +1,44 @@
+@import '../../styles/mixins';
+.lp-footer-wrapper{
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5em 0;
+
+    @include respond-until(sm) {
+        background-position: top right;
+        padding-bottom: 80px;
+    }
+
+    .form-wrapper{
+        padding: 30px 80px 20px 80px;
+        @include respond-until(sm) {
+            padding: 10px 10px;
+        }
+    }
+
+    .footer-content-wrap {
+        text-align: center;
+        padding: 50px 0 0 0;
+        & h1 {
+            font-size: 35px;
+            line-height: 50px;
+            color: #333;
+            text-align: center;
+            & .slash-icon{
+                color: #c80000;
+            }
+            & .help-txt{
+                color: #c80000;
+                font-weight: 500;
+                font-family: cursive;
+            }
+        }
+
+        & h3{
+            margin-top: 20px;
+            font-size: 25px;
+            color: #000;
+            line-height: 35px;
+        }
+    }
+}
